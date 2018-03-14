@@ -24,6 +24,7 @@
 #include "wifi-mac.h"
 #include "qos-txop.h"
 #include "ssid.h"
+#include "ns3/mih-link-sap.h"
 
 namespace ns3 {
 
@@ -272,6 +273,20 @@ public:
    * \param linkDown the callback to invoke when the link becomes down.
    */
   void SetLinkDownCallback (Callback<void> linkDown);
+  /**
+   * \param mihLinkUp the callback to invoke when the link becomes up to generate the MIH event.
+   */
+  void SetMihLinkUpCallback (Callback<void, mih::LinkIdentifier, Address, Address, 
+                             bool, mih::MobilityManagementSupport> linkUp);
+  /**
+   * \param mihLinkDown the callback to invoke when the link becomes down to generate the MIH event.
+   */
+  void SetMihLinkDownCallback (Callback<void, mih::LinkIdentifier, Address, 
+                               mih::LinkDownReason> linkDown);
+  /**
+   * \param mihLinkDetected the callback to invoke when a link is detected to generate the MIH event.
+   */
+  void SetMihLinkDetectedCallback (Callback<void, mih::LinkDetectedInformationList> linkDetected);
 
   /* Next functions are not pure virtual so non Qos WifiMacs are not
    * forced to implement them.
@@ -297,6 +312,9 @@ protected:
   ForwardUpCallback m_forwardUp; //!< Callback to forward packet up the stack
   Callback<void> m_linkUp;       //!< Callback when a link is up
   Callback<void> m_linkDown;     //!< Callback when a link is down
+  Callback<void, mih::LinkIdentifier, Address, Address, bool, mih::MobilityManagementSupport> m_mihLinkUp;
+  Callback<void, mih::LinkIdentifier, Address, mih::LinkDownReason> m_mihLinkDown;
+  Callback<void, mih::LinkDetectedInformationList> m_mihLinkDetected;
 
   Ssid m_ssid; //!< Service Set ID (SSID)
 

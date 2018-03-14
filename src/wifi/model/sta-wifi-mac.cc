@@ -27,6 +27,8 @@
 #include "wifi-phy.h"
 #include "mac-low.h"
 #include "mgt-headers.h"
+#include "ns3/wifi-mih-link-sap.h"
+#include "snr-tag.h"
 
 /*
  * The state machine for this STA is:
@@ -294,6 +296,13 @@ StaWifiMac::TryToEnsureAssociated (void)
        */
       m_linkDown ();
       if (GetActiveProbing ())
+      if (!m_mihLinkDown.IsNull ())
+        {
+          mih::LinkIdentifier linkId = mih::LinkIdentifier (mih::LinkType (mih::LinkType::WIRELESS_802_11),
+                                                            GetAddress (), GetBssid ());
+          m_mihLinkDown (linkId, GetBssid (), mih::LinkDownReason(mih::LinkDownReason::NO_BROADCAST));
+        }
+      if (m_activeProbing)
         {
           SetState (WAIT_PROBE_RESP);
           SendProbeRequest ();
@@ -561,6 +570,31 @@ StaWifiMac::Receive (Ptr<Packet> packet, const WifiMacHeader *hdr)
           NS_LOG_LOGIC ("Beacon is not for us");
           goodBeacon = false;
         }
+      if (!(IsAssociated () && hdr->GetAddr3 () == GetBssid ()))
+        {
+          if (!m_mihLinkDetected.IsNull ())
+            {
+              mih::LinkIdentifier linkId = mih::LinkIdentifier (mih::LinkType (mih::LinkType::WIRELESS_802_11),
+                                                                GetAddress (),
+                                                                hdr->GetAddr2 ());
+              mih::NetworkIdentifier networkId = mih::NetworkIdentifier ();
+              mih::NetworkAuxiliaryIdentifier networkAuxiliaryId = mih::NetworkAuxiliaryIdentifier ();
+              mih::SignalStrength signalStrength = mih::SignalStrength ();
+              SnrTag tag;
+              packet->PeekPacketTag (tag);
+              uint16_t snr = (uint16_t) tag.Get ();
+              mih::MihCapabilityFlag mihCapabilityFlag = mih::MihCapabilityFlag ();
+              mih::NetworkCapabilities networkCapabilities =  mih::NetworkCapabilities ();
+              mih::LinkDetectedInformation linkInfo = mih::LinkDetectedInformation (linkId, networkId,
+                                                                                    networkAuxiliaryId, signalStrength, snr, 
+                                                                                    rates, mihCapabilityFlag,
+                                                                                    networkCapabilities);
+              Ptr<mih::LinkDetectedInformation> linkInformation = Create<mih::LinkDetectedInformation> (linkInfo);
+              std::vector<Ptr<mih::LinkDetectedInformation>> linkInfoList;
+              linkInfoList.push_back (linkInformation);
+              m_mihLinkDetected (linkInfoList);
+            }
+        }
       if (goodBeacon)
         {
           Time delay = MicroSeconds (beacon.GetBeaconIntervalUs () * m_maxMissedBeacons);
@@ -715,7 +749,30 @@ StaWifiMac::Receive (Ptr<Packet> packet, const WifiMacHeader *hdr)
                   return;
                 }
             }
-          for (uint8_t i = 0; i < m_phy->GetNModes (); i++)
+          if (!m_mihLinkDetected.IsNull ())
+            {
+              mih::LinkIdentifier linkId = mih::LinkIdentifier (mih::LinkType (mih::LinkType::WIRELESS_802_11),
+                                                                hdr->GetAddr1 (),
+                                                                hdr->GetAddr2 ());
+              mih::NetworkIdentifier networkId = mih::NetworkIdentifier ();
+              mih::NetworkAuxiliaryIdentifier networkAuxiliaryId = mih::NetworkAuxiliaryIdentifier ();
+              mih::SignalStrength signalStrength = mih::SignalStrength ();
+              SnrTag tag;
+              packet->PeekPacketTag (tag);
+              uint16_t snr = (uint16_t) tag.Get ();
+              mih::MihCapabilityFlag mihCapabilityFlag = mih::MihCapabilityFlag ();
+              mih::NetworkCapabilities networkCapabilities =  mih::NetworkCapabilities ();
+              mih::LinkDetectedInformation linkInfo = mih::LinkDetectedInformation (linkId, networkId,
+                                                                                    networkAuxiliaryId, signalStrength, snr, 
+                                                                                    rates, mihCapabilityFlag,
+                                                                                    networkCapabilities);
+              Ptr<mih::LinkDetectedInformation> linkInformation = Create<mih::LinkDetectedInformation> (linkInfo);
+              std::vector<Ptr<mih::LinkDetectedInformation>> linkInfoList;
+              linkInfoList.push_back (linkInformation);
+              m_mihLinkDetected (linkInfoList);
+            }
+        
+          for (uint32_t i = 0; i < m_phy->GetNModes (); i++)
             {
               WifiMode mode = m_phy->GetMode (i);
               if (rates.IsSupportedRate (mode.GetDataRate (m_phy->GetChannelWidth ())))
@@ -959,6 +1016,14 @@ StaWifiMac::Receive (Ptr<Packet> packet, const WifiMacHeader *hdr)
               if (!m_linkUp.IsNull ())
                 {
                   m_linkUp ();
+                }
+              if (!m_mihLinkUp.IsNull ())
+                {
+                  mih::LinkIdentifier linkId = mih::LinkIdentifier (mih::LinkType (mih::LinkType::WIRELESS_802_11),
+                                                                    hdr->GetAddr1 (),
+                                                                    hdr->GetAddr2 ());
+                  m_mihLinkUp (linkId, Address (), hdr->GetAddr2 (), true, 
+                               mih::MobilityManagementSupport (mih::MobilityManagementSupport::MOBILE_IPV4_RFC3344));
                 }
             }
           else

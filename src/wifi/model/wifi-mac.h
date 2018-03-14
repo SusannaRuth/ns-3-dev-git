@@ -24,6 +24,7 @@
 #include "wifi-phy-standard.h"
 #include "wifi-remote-station-manager.h"
 #include "qos-utils.h"
+#include "ns3/mih-link-sap.h"
 
 namespace ns3 {
 
@@ -218,6 +219,20 @@ public:
    * \param linkDown the callback to invoke when the link becomes down.
    */
   virtual void SetLinkDownCallback (Callback<void> linkDown) = 0;
+  /**
+   * \param mihLinkUp the callback to invoke when the link becomes up to generate the MIH event.
+   */
+  virtual void SetMihLinkUpCallback (Callback<void, mih::LinkIdentifier, Address, Address, 
+                             bool, mih::MobilityManagementSupport> linkUp) = 0;
+  /**
+   * \param mihLinkDown the callback to invoke when the link becomes down to generate the MIH event.
+   */
+  virtual void SetMihLinkDownCallback (Callback<void, mih::LinkIdentifier, Address, 
+                                       mih::LinkDownReason> linkDown) = 0;
+   /**
+   * \param mihLinkDetected the callback to invoke when a link is detected to generate the MIH event.
+   */
+  virtual void SetMihLinkDetectedCallback (Callback<void, mih::LinkDetectedInformationList> linkDetected) = 0;
   /* Next functions are not pure virtual so non Qos WifiMacs are not
    * forced to implement them.
    */

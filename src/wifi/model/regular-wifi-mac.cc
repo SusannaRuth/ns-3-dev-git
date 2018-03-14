@@ -565,6 +565,29 @@ RegularWifiMac::SetLinkDownCallback (Callback<void> linkDown)
 }
 
 void
+RegularWifiMac::SetMihLinkUpCallback (Callback<void, mih::LinkIdentifier, Address, Address, bool, 
+                                      mih::MobilityManagementSupport> linkUp)
+{
+  NS_LOG_FUNCTION (this);
+  m_mihLinkUp = linkUp;
+}
+
+void
+RegularWifiMac::SetMihLinkDownCallback (Callback<void, mih::LinkIdentifier, Address, 
+                                        mih::LinkDownReason> linkDown)
+{
+  NS_LOG_FUNCTION (this);
+  m_mihLinkDown = linkDown;
+}
+
+void
+RegularWifiMac::SetMihLinkDetectedCallback (Callback<void, mih::LinkDetectedInformationList> linkDetected)
+{
+  NS_LOG_FUNCTION (this);
+  m_mihLinkDetected = linkDetected;
+}
+
+void
 RegularWifiMac::SetQosSupported (bool enable)
 {
   NS_LOG_FUNCTION (this << enable);
