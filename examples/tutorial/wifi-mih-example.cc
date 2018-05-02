@@ -40,11 +40,12 @@ main (int argc, char *argv[])
   bool verbose = true;
   uint32_t nWifi = 3;
   bool tracing = false;
-
+  uint32_t n= 3;
   CommandLine cmd;
-  cmd.AddValue ("nWifi", "Number of wifi STA devices", nWifi);
-  cmd.AddValue ("verbose", "Tell echo applications to log if true", verbose);
-  cmd.AddValue ("tracing", "Enable pcap tracing", tracing);
+  cmd.AddValue ("n", "N", n);
+  //cmd.AddValue ("nWifi", "Number of wifi STA devices", nWifi);
+  //cmd.AddValue ("verbose", "Tell echo applications to log if true", verbose);
+  //cmd.AddValue ("tracing", "Enable pcap tracing", tracing);
 
   cmd.Parse (argc,argv);
 
@@ -56,7 +57,7 @@ main (int argc, char *argv[])
       std::cout << "nWifi should be 18 or less; otherwise grid layout exceeds the bounding box" << std::endl;
       return 1;
     }
-
+  
   if (verbose)
     {
       LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
@@ -67,10 +68,10 @@ main (int argc, char *argv[])
   NodeContainer wifiStaNodes;
   wifiStaNodes.Create (nWifi);
 
-  WifiMihLinkSapHelper wifiMifLinkSapHelper;
-  Ptr<mih::WifiMihLinkSap> mihLinkSap1 = wifiMifLinkSapHelper.Install (wifiStaNodes.Get (0));
-  Ptr<mih::WifiMihLinkSap> mihLinkSap2 = wifiMifLinkSapHelper.Install (wifiStaNodes.Get (1));
-  Ptr<mih::WifiMihLinkSap> mihLinkSap3 = wifiMifLinkSapHelper.Install (wifiStaNodes.Get (2));
+  WifiMihLinkSapHelper wifiMihLinkSapHelper;
+  Ptr<mih::WifiMihLinkSap> mihLinkSap1 = wifiMihLinkSapHelper.Install (wifiStaNodes.Get (0));
+  Ptr<mih::WifiMihLinkSap> mihLinkSap2 = wifiMihLinkSapHelper.Install (wifiStaNodes.Get (1));
+  Ptr<mih::WifiMihLinkSap> mihLinkSap3 = wifiMihLinkSapHelper.Install (wifiStaNodes.Get (2));
 
   //Ptr<mih::WifiMihLinkSap> mihLinkSap1 = CreateObject<mih::WifiMihLinkSap> ();
   //wifiStaNodes.Get (0)->AggregateObject(mihLinkSap1);
