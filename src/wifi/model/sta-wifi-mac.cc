@@ -295,14 +295,13 @@ StaWifiMac::TryToEnsureAssociated (void)
        * We try to initiate a probe request now.
        */
       m_linkDown ();
-      if (GetActiveProbing ())
       if (!m_mihLinkDown.IsNull ())
         {
           mih::LinkIdentifier linkId = mih::LinkIdentifier (mih::LinkType (mih::LinkType::WIRELESS_802_11),
                                                             GetAddress (), GetBssid ());
           m_mihLinkDown (linkId, GetBssid (), mih::LinkDownReason(mih::LinkDownReason::NO_BROADCAST));
         }
-      if (m_activeProbing)
+      if (GetActiveProbing ())
         {
           SetState (WAIT_PROBE_RESP);
           SendProbeRequest ();
