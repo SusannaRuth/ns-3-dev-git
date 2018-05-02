@@ -29,8 +29,6 @@
 #include "wifi-phy.h"
 #include "regular-wifi-mac.h"
 #include "wifi-mac-queue.h"
-#include "ns3/mihf-id.h"
-#include "ns3/wifi-mih-link-sap.h"
 
 namespace ns3 {
 

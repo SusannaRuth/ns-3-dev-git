@@ -40,12 +40,11 @@ main (int argc, char *argv[])
   bool verbose = true;
   uint32_t nWifi = 3;
   bool tracing = false;
-  uint32_t n= 3;
+
   CommandLine cmd;
-  cmd.AddValue ("n", "N", n);
-  //cmd.AddValue ("nWifi", "Number of wifi STA devices", nWifi);
-  //cmd.AddValue ("verbose", "Tell echo applications to log if true", verbose);
-  //cmd.AddValue ("tracing", "Enable pcap tracing", tracing);
+  cmd.AddValue ("nWifi", "Number of wifi STA devices", nWifi);
+  cmd.AddValue ("verbose", "Tell echo applications to log if true", verbose);
+  cmd.AddValue ("tracing", "Enable pcap tracing", tracing);
 
   cmd.Parse (argc,argv);
 
