@@ -29,6 +29,8 @@
 #include "wifi-phy.h"
 #include "regular-wifi-mac.h"
 #include "wifi-mac-queue.h"
+#include "ns3/mihf-id.h"
+#include "ns3/wifi-mih-link-sap.h"
 
 namespace ns3 {
 
@@ -123,6 +125,14 @@ WifiNetDevice::CompleteConfig (void)
   m_mac->SetForwardUpCallback (MakeCallback (&WifiNetDevice::ForwardUp, this));
   m_mac->SetLinkUpCallback (MakeCallback (&WifiNetDevice::LinkUp, this));
   m_mac->SetLinkDownCallback (MakeCallback (&WifiNetDevice::LinkDown, this));
+  Ptr<mih::WifiMihLinkSap> mihLinkSap= m_node->GetObject<mih::WifiMihLinkSap> ();
+  if (mihLinkSap != 0)
+    {
+      m_mac-> MihAssociation (mihLinkSap);
+      m_mac->SetMihLinkUpCallback (MakeCallback (&WifiNetDevice::MihLinkUp, this));
+      m_mac->SetMihLinkDownCallback (MakeCallback (&WifiNetDevice::MihLinkDown, this));
+      m_mac->SetMihLinkDetectedCallback (MakeCallback (&WifiNetDevice::MihLinkDetected, this));
+    }
   m_stationManager->SetupPhy (m_phy);
   m_stationManager->SetupMac (m_mac);
   m_configComplete = true;
@@ -434,6 +444,32 @@ WifiNetDevice::LinkDown (void)
 {
   m_linkUp = false;
   m_linkChanges ();
+}
+
+void
+WifiNetDevice::MihLinkUp (mih::LinkIdentifier linkIdentifier, Address oldAR, Address newAR,
+                          bool ipRenewal, mih::MobilityManagementSupport mobilitySupport)
+{
+  //m_mihLinkUp(linkIdentifier, oldAR, newAR, ipRenewal, mobilitySupport);
+  Ptr<mih::WifiMihLinkSap> mihLinkSap= m_node->GetObject<mih::WifiMihLinkSap> ();
+  mihLinkSap->LinkUp (mihLinkSap->GetMihfId (), linkIdentifier, oldAR, newAR, ipRenewal, mobilitySupport);
+}
+
+void
+WifiNetDevice::MihLinkDown (mih::LinkIdentifier linkIdentifier, Address oldAR,
+                          mih::LinkDownReason reason)
+{
+  //m_mihLinkUp(linkIdentifier, oldAR, newAR, ipRenewal, mobilitySupport);
+  Ptr<mih::WifiMihLinkSap> mihLinkSap= m_node->GetObject<mih::WifiMihLinkSap> ();
+  mihLinkSap->LinkDown (mihLinkSap->GetMihfId (), linkIdentifier, oldAR, reason);
+}
+
+void
+WifiNetDevice::MihLinkDetected (mih::LinkDetectedInformationList linkInfoList)
+{
+  //m_mihLinkUp(linkIdentifier, oldAR, newAR, ipRenewal, mobilitySupport);
+  Ptr<mih::WifiMihLinkSap> mihLinkSap= m_node->GetObject<mih::WifiMihLinkSap> ();
+  mihLinkSap->LinkDetected (mihLinkSap->GetMihfId (), linkInfoList);
 }
 
 bool

@@ -23,6 +23,9 @@
 
 #include "ns3/net-device.h"
 #include "ns3/traced-callback.h"
+#include "ns3/mih-link-sap.h"
+#include "ns3/wifi-mih-link-sap.h"
+//#include "ns3/simple-mih-link-sap.h"
 
 namespace ns3 {
 
@@ -156,6 +159,27 @@ private:
    * Set that the link is down (i.e. STA is not associated).
    */
   void LinkDown (void);
+  /**
+   * Generate LinkUp event to MIHLinkSap when the link is up.
+   */
+  void MihLinkUp (mih::LinkIdentifier linkIdentifier, Address oldAR, Address newAR,
+                   bool ipRenewal, mih::MobilityManagementSupport mobilitySupport);
+  /**
+   * Generate LinkDown event to MIHLinkSap when the link is down.
+   */
+  void MihLinkDown (mih::LinkIdentifier linkIdentifier, Address oldAR,
+                    mih::LinkDownReason reason);
+
+  /**
+   * Generate LinkDetected event to MIHLinkSap when a link is detected.
+   */
+  void MihLinkDetected (mih::LinkDetectedInformationList linkInfoList);
+  /**
+   * Return the Channel this device is connected to.
+   *
+   * \return Ptr to Channel object
+   */
+  Ptr<Channel> DoGetChannel (void) const;
   /**
    * Complete the configuration of this Wi-Fi device by
    * connecting all lower components (e.g. MAC, WifiRemoteStation) together.
