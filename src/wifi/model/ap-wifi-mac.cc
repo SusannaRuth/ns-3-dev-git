@@ -34,6 +34,7 @@
 #include "msdu-aggregator.h"
 #include "amsdu-subframe-header.h"
 #include "wifi-phy.h"
+#include "station-count-tag.h"
 
 namespace ns3 {
 
@@ -894,6 +895,13 @@ ApWifiMac::SendOneBeacon (void)
       beacon.SetHeOperation (GetHeOperation ());
     }
   packet->AddHeader (beacon);
+  if (!m_mihLinkUp.IsNull ())
+    { 
+      StationCountTag tag;
+      //packet->RemovePacketTag (tag);
+      tag.Set (m_staList.size ()); 
+      packet->AddPacketTag (tag);
+    }
 
   //The beacon has it's own special queue, so we load it in there
   m_beaconTxop->Queue (packet, hdr);

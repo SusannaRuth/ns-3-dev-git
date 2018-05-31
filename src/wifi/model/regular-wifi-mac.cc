@@ -581,7 +581,7 @@ RegularWifiMac::SetMihLinkDownCallback (Callback<void, mih::LinkIdentifier, Addr
 }
 
 void
-RegularWifiMac::SetMihLinkDetectedCallback (Callback<void, mih::LinkDetectedInformationList> linkDetected)
+RegularWifiMac::SetMihLinkDetectedCallback (Callback<bool, mih::LinkDetectedInformation> linkDetected)
 {
   NS_LOG_FUNCTION (this);
   m_mihLinkDetected = linkDetected;

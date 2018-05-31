@@ -32,6 +32,7 @@
 #include "ns3/config.h"
 #include "ns3/names.h"
 #include "wifi-helper.h"
+#include "ns3/wifi-mih-link-sap.h"
 
 namespace ns3 {
 
@@ -743,6 +744,14 @@ WifiHelper::Install (const WifiPhyHelper &phyHelper,
       mac->SetAddress (Mac48Address::Allocate ());
       mac->ConfigureStandard (m_standard);
       phy->ConfigureStandard (m_standard);
+      //new code-mih
+      Ptr<mih::WifiMihLinkSap> mihLinkSap= node->GetObject<mih::WifiMihLinkSap> ();
+      if (mihLinkSap != 0)
+        {
+          mih::LinkIdentifier linkId = mih::LinkIdentifier (mih::LinkType (mih::LinkType::WIRELESS_802_11),
+                                                            mac->GetAddress ());
+          mihLinkSap->SetLinkIdentifier (linkId);      
+        }
       device->SetMac (mac);
       device->SetPhy (phy);
       device->SetRemoteStationManager (manager);

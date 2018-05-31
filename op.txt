@@ -1,0 +1,2581 @@
+Waf: Entering directory `/home/susanna/Desktop/ns-3-dev-git/build'
+Waf: Leaving directory `/home/susanna/Desktop/ns-3-dev-git/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.637s)
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65454, SNR = 12, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkUp Event
+Source Mihf Identifier = , from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:04], Old AR = 00-00-00, New AR = 02-06-00:00:00:00:00:04
+MIH LinkUp Event
+Source Mihf Identifier = , from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Old AR = 00-00-00, New AR = 02-06-00:00:00:00:00:04
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65476, SNR = 2142, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkUp Event
+Source Mihf Identifier = , from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Old AR = 00-00-00, New AR = 02-06-00:00:00:00:00:03
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65471, SNR = 634, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Signal Strength = 65485, SNR = 17138, StationCount = 1
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkUp Event
+Source Mihf Identifier = , from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:04], Old AR = 00-00-00, New AR = 02-06-00:00:00:00:00:04
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:01, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65467, SNR = 267, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+MIH LinkDetected Event
+Source Mihf Identifier = 
+
+ from Link Identifier = [Type = 19, L2 Address = 02-06-00:00:00:00:00:02, PoA Address = 02-06-00:00:00:00:00:03], Signal Strength = 65449, SNR = 4, StationCount = 0
+Supported Rates 
+6000000, 
+9000000, 
+12000000, 
+18000000, 
+24000000, 
+36000000, 
+48000000, 
+54000000, 
+Flow 1 (10.1.3.2 -> 10.1.3.1)
+  Tx Packets: 151
+  Tx Bytes:   88935
+  TxOffered:  0.142296 Mbps
+  Rx Packets: 151
+  Rx Bytes:   88935
+  Throughput: 0.142296 Mbps
+  Mean delay:   0.00229403

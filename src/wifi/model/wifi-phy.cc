@@ -29,6 +29,8 @@
 #include "ampdu-tag.h"
 #include "wifi-utils.h"
 #include "frame-capture-model.h"
+#include "signal-strength-tag.h"
+#include "ns3/wifi-mih-link-sap.h"
 #include "wifi-radio-energy-model.h"
 #include "error-rate-model.h"
 
@@ -2554,6 +2556,14 @@ WifiPhy::EndReceive (Ptr<Packet> packet, WifiPreamble preamble, MpduType mpdutyp
           aMpdu.type = mpdutype;
           aMpdu.mpduRefNumber = m_rxMpduReferenceNumber;
           NotifyMonitorSniffRx (packet, GetFrequency (), event->GetTxVector (), aMpdu, signalNoise);
+          Ptr<mih::WifiMihLinkSap> mihLinkSap= m_device->GetNode ()->GetObject<mih::WifiMihLinkSap> ();
+          if (mihLinkSap != 0)
+            { 
+              SignalStrengthTag tag;
+              packet->RemovePacketTag (tag);
+              tag.Set (signalNoise.signal); 
+              packet->AddPacketTag (tag);
+            }
           m_state->SwitchFromRxEndOk (packet, snrPer.snr, event->GetTxVector ());
         }
       else

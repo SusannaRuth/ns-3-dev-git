@@ -26,6 +26,7 @@
 #include "qos-utils.h"
 #include "ns3/mih-link-sap.h"
 
+
 namespace ns3 {
 
 class Ssid;
@@ -232,7 +233,8 @@ public:
    /**
    * \param mihLinkDetected the callback to invoke when a link is detected to generate the MIH event.
    */
-  virtual void SetMihLinkDetectedCallback (Callback<void, mih::LinkDetectedInformationList> linkDetected) = 0;
+  virtual void SetMihLinkDetectedCallback (Callback<bool, mih::LinkDetectedInformation> linkDetected) = 0;
+
   /* Next functions are not pure virtual so non Qos WifiMacs are not
    * forced to implement them.
    */

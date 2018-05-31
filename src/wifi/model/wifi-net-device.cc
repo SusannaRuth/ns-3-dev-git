@@ -126,7 +126,6 @@ WifiNetDevice::CompleteConfig (void)
   Ptr<mih::WifiMihLinkSap> mihLinkSap= m_node->GetObject<mih::WifiMihLinkSap> ();
   if (mihLinkSap != 0)
     {
-      //m_mac-> MihAssociation (mihLinkSap);
       m_mac->SetMihLinkUpCallback (MakeCallback (&WifiNetDevice::MihLinkUp, this));
       m_mac->SetMihLinkDownCallback (MakeCallback (&WifiNetDevice::MihLinkDown, this));
       m_mac->SetMihLinkDetectedCallback (MakeCallback (&WifiNetDevice::MihLinkDetected, this));
@@ -462,12 +461,12 @@ WifiNetDevice::MihLinkDown (mih::LinkIdentifier linkIdentifier, Address oldAR,
   mihLinkSap->LinkDown (mihLinkSap->GetMihfId (), linkIdentifier, oldAR, reason);
 }
 
-void
-WifiNetDevice::MihLinkDetected (mih::LinkDetectedInformationList linkInfoList)
+bool
+WifiNetDevice::MihLinkDetected (mih::LinkDetectedInformation linkInfo)
 {
   //m_mihLinkUp(linkIdentifier, oldAR, newAR, ipRenewal, mobilitySupport);
   Ptr<mih::WifiMihLinkSap> mihLinkSap= m_node->GetObject<mih::WifiMihLinkSap> ();
-  mihLinkSap->LinkDetected (mihLinkSap->GetMihfId (), linkInfoList);
+  return mihLinkSap->LinkDetected (mihLinkSap->GetMihfId (), linkInfo);
 }
 
 bool

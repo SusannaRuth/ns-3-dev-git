@@ -118,6 +118,11 @@ private:
    */
   void SendCfPollResponse (void);
   /**
+   * Forward a disassociation request packet to the DCF. The standard is not clear on the correct
+   * queue for management frames if QoS is supported. We always use the DCF.
+   */
+  void SendDisassociationRequest (void);
+  /**
    * Try to ensure that we are associated with an AP by taking an appropriate action
    * depending on the current association status.
    */

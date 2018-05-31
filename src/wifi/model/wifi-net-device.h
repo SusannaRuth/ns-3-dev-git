@@ -173,7 +173,7 @@ private:
   /**
    * Generate LinkDetected event to MIHLinkSap when a link is detected.
    */
-  void MihLinkDetected (mih::LinkDetectedInformationList linkInfoList);
+  bool MihLinkDetected (mih::LinkDetectedInformation linkInfo);
   /**
    * Return the Channel this device is connected to.
    *

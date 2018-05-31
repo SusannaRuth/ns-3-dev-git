@@ -34,6 +34,15 @@ using namespace ns3;
 
 NS_LOG_COMPONENT_DEFINE ("WifiMihExample");
 
+static void
+SetPosition (Ptr<Node> node, double x)
+{
+  Ptr<MobilityModel> mobility = node ->GetObject<MobilityModel> ();
+  Vector pos = mobility ->GetPosition ();
+  pos.x = x;
+  mobility ->SetPosition (pos);
+}
+
 int 
 main (int argc, char *argv[])
 {
@@ -56,31 +65,39 @@ main (int argc, char *argv[])
       std::cout << "nWifi should be 18 or less; otherwise grid layout exceeds the bounding box" << std::endl;
       return 1;
     }
-  
+
   if (verbose)
     {
       LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
       LogComponentEnable ("UdpEchoServerApplication", LOG_LEVEL_INFO);
       LogComponentEnable ("MihLinkSap", LOG_LEVEL_INFO);
+      LogComponentEnable ("WifiMihLinkSap", LOG_LEVEL_INFO);
     }
 
   NodeContainer wifiStaNodes;
   wifiStaNodes.Create (nWifi);
 
-  WifiMihLinkSapHelper wifiMihLinkSapHelper;
-  Ptr<mih::WifiMihLinkSap> mihLinkSap1 = wifiMihLinkSapHelper.Install (wifiStaNodes.Get (0));
-  Ptr<mih::WifiMihLinkSap> mihLinkSap2 = wifiMihLinkSapHelper.Install (wifiStaNodes.Get (1));
-  Ptr<mih::WifiMihLinkSap> mihLinkSap3 = wifiMihLinkSapHelper.Install (wifiStaNodes.Get (2));
+  //Ptr<mih::MihFunction> mihf = CreateObject<mih::MihFunction> ();
+  //wifiStaNodes.Get (0)->AggregateObject (mihf);
+  //Ptr<mih::SimpleMihUser> mihUser = CreateObject<mih::SimpleMihUser> ();
+  //wifiStaNodes.Get (0)->AggregateObject (mihUser);
+
+  WifiMihLinkSapHelper wifiMifLinkSapHelper;
+  Ptr<mih::WifiMihLinkSap> mihLinkSap1 = wifiMifLinkSapHelper.Install (wifiStaNodes.Get (0));
+  Ptr<mih::WifiMihLinkSap> mihLinkSap2 = wifiMifLinkSapHelper.Install (wifiStaNodes.Get (1));
+  Ptr<mih::WifiMihLinkSap> mihLinkSap3 = wifiMifLinkSapHelper.Install (wifiStaNodes.Get (2));
 
   //Ptr<mih::WifiMihLinkSap> mihLinkSap1 = CreateObject<mih::WifiMihLinkSap> ();
   //wifiStaNodes.Get (0)->AggregateObject(mihLinkSap1);
   //Ptr<mih::WifiMihLinkSap> mihLinkSap2 = CreateObject<mih::WifiMihLinkSap> ();
   //wifiStaNodes.Get (1)->AggregateObject (mihLinkSap2);
   //Ptr<mih::WifiMihLinkSap> mihLinkSap3 = CreateObject<mih::WifiMihLinkSap> ();
-  //wifiStaNodes.Get (2)->AggregateObject (mihLinkSap3);
+  //wifiStaNodes.Get (2)->AggregateObject (mihLinkSap3); 
 
   NodeContainer wifiApNode;
   wifiApNode.Create (1);
+
+  Ptr<mih::WifiMihLinkSap> mihLinkSap4 = wifiMifLinkSapHelper.Install (wifiApNode.Get (0));
 
   YansWifiChannelHelper channel = YansWifiChannelHelper::Default ();
   YansWifiPhyHelper phy = YansWifiPhyHelper::Default ();
@@ -115,8 +132,11 @@ main (int argc, char *argv[])
                                  "LayoutType", StringValue ("RowFirst"));
 
   mobility.SetMobilityModel ("ns3::RandomWalk2dMobilityModel",
-                             "Bounds", RectangleValue (Rectangle (-50, 50, -50, 50)));
+                             "Bounds", RectangleValue (Rectangle (-300, 300, -300, 300)));
   mobility.Install (wifiStaNodes);
+
+  
+  Simulator::Schedule (Seconds (5.0), &SetPosition, wifiStaNodes.Get(0), 200);
 
   mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");
   mobility.Install (wifiApNode);
@@ -137,8 +157,8 @@ main (int argc, char *argv[])
 
   if (tracing == true)
     {
-      phy.EnablePcap ("wifimih_node", staDevices.Get (0));
-      phy.EnablePcap ("wifimih_ap", apDevices.Get (0));
+      phy.EnablePcap ("wifimih_node1", staDevices.Get (0));
+      phy.EnablePcap ("wifimih_ap1", apDevices.Get (0));
     }
 
   Simulator::Run ();

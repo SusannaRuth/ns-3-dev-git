@@ -29,6 +29,8 @@
 #include "mgt-headers.h"
 #include "ns3/wifi-mih-link-sap.h"
 #include "snr-tag.h"
+#include "signal-strength-tag.h"
+#include "station-count-tag.h"
 
 /*
  * The state machine for this STA is:
@@ -271,6 +273,28 @@ StaWifiMac::SendCfPollResponse (void)
   NS_LOG_FUNCTION (this);
   NS_ASSERT (GetPcfSupported ());
   m_txop->SendCfFrame (WIFI_MAC_DATA_NULL, GetBssid ());
+}
+
+void
+StaWifiMac::SendDisassociationRequest (void)
+{
+  NS_LOG_FUNCTION (this << GetBssid ());
+  WifiMacHeader hdr;
+  hdr.SetType (WIFI_MAC_MGT_DISASSOCIATION);
+  hdr.SetAddr1 (GetBssid ());
+  hdr.SetAddr2 (GetAddress ());
+  hdr.SetAddr3 (GetBssid ());
+  hdr.SetDsNotFrom ();
+  hdr.SetDsNotTo ();
+  hdr.SetNoOrder ();
+  Ptr<Packet> packet = Create<Packet> ();
+
+  //The standard is not clear on the correct queue for management
+  //frames if we are a QoS AP. The approach taken here is to always
+  //use the DCF for these regardless of whether we have a QoS
+  //association or not.
+  m_txop->Queue (packet, hdr);
+
 }
 
 void
@@ -549,6 +573,40 @@ StaWifiMac::Receive (Ptr<Packet> packet, const WifiMacHeader *hdr)
             }
         }
       SupportedRates rates = beacon.GetSupportedRates ();
+      
+      bool sendAssoc = false;
+      if (!m_mihLinkDetected.IsNull ())
+        {
+          if (!(IsAssociated () && hdr->GetAddr3 () == GetBssid ()))
+            {
+              mih::LinkIdentifier linkId = mih::LinkIdentifier (mih::LinkType (mih::LinkType::WIRELESS_802_11),
+                                                                GetAddress (),
+                                                                hdr->GetAddr2 ());
+              mih::NetworkIdentifier networkId = mih::NetworkIdentifier ();
+              mih::NetworkAuxiliaryIdentifier networkAuxiliaryId = mih::NetworkAuxiliaryIdentifier ();
+              SignalStrengthTag signalStrengthTag;
+              packet->RemovePacketTag (signalStrengthTag);
+              uint16_t signal = (uint16_t) signalStrengthTag.Get ();
+              mih::SignalStrength signalStrength = mih::SignalStrength (signal);
+              SnrTag tag;
+              packet->PeekPacketTag (tag);
+              uint16_t snr = (uint16_t) tag.Get ();
+              mih::MihCapabilityFlag mihCapabilityFlag = mih::MihCapabilityFlag ();
+              mih::NetworkCapabilities networkCapabilities =  mih::NetworkCapabilities ();
+              StationCountTag stationCountTag;
+              packet->RemovePacketTag (stationCountTag);
+              uint32_t stationCount = stationCountTag.Get ();
+              mih::LinkDetectedInformation linkInfo = mih::LinkDetectedInformation (linkId, networkId,
+                                                                                    networkAuxiliaryId, signalStrength, snr, 
+                                                                                    rates, mihCapabilityFlag,
+                                                                                    networkCapabilities, stationCount);
+              sendAssoc = m_mihLinkDetected (linkInfo);
+            }
+        }
+      if (IsAssociated () && sendAssoc)
+        {
+          SendDisassociationRequest ();
+        }
       bool bssMembershipSelectorMatch = false;
       for (uint8_t i = 0; i < m_phy->GetNBssMembershipSelectors (); i++)
         {
@@ -563,38 +621,14 @@ StaWifiMac::Receive (Ptr<Packet> packet, const WifiMacHeader *hdr)
         {
           NS_LOG_LOGIC ("No match for BSS membership selector");
           goodBeacon = false;
+          sendAssoc = false;
         }
       if ((IsWaitAssocResp () || IsAssociated ()) && hdr->GetAddr3 () != GetBssid ())
         {
           NS_LOG_LOGIC ("Beacon is not for us");
           goodBeacon = false;
         }
-      if (!(IsAssociated () && hdr->GetAddr3 () == GetBssid ()))
-        {
-          if (!m_mihLinkDetected.IsNull ())
-            {
-              mih::LinkIdentifier linkId = mih::LinkIdentifier (mih::LinkType (mih::LinkType::WIRELESS_802_11),
-                                                                GetAddress (),
-                                                                hdr->GetAddr2 ());
-              mih::NetworkIdentifier networkId = mih::NetworkIdentifier ();
-              mih::NetworkAuxiliaryIdentifier networkAuxiliaryId = mih::NetworkAuxiliaryIdentifier ();
-              mih::SignalStrength signalStrength = mih::SignalStrength ();
-              SnrTag tag;
-              packet->PeekPacketTag (tag);
-              uint16_t snr = (uint16_t) tag.Get ();
-              mih::MihCapabilityFlag mihCapabilityFlag = mih::MihCapabilityFlag ();
-              mih::NetworkCapabilities networkCapabilities =  mih::NetworkCapabilities ();
-              mih::LinkDetectedInformation linkInfo = mih::LinkDetectedInformation (linkId, networkId,
-                                                                                    networkAuxiliaryId, signalStrength, snr, 
-                                                                                    rates, mihCapabilityFlag,
-                                                                                    networkCapabilities);
-              Ptr<mih::LinkDetectedInformation> linkInformation = Create<mih::LinkDetectedInformation> (linkInfo);
-              std::vector<Ptr<mih::LinkDetectedInformation>> linkInfoList;
-              linkInfoList.push_back (linkInformation);
-              m_mihLinkDetected (linkInfoList);
-            }
-        }
-      if (goodBeacon)
+      if (goodBeacon || (!m_mihLinkDetected.IsNull () && sendAssoc))
         {
           Time delay = MicroSeconds (beacon.GetBeaconIntervalUs () * m_maxMissedBeacons);
           RestartBeaconWatchdog (delay);
@@ -717,7 +751,7 @@ StaWifiMac::Receive (Ptr<Packet> packet, const WifiMacHeader *hdr)
           m_stationManager->SetShortPreambleEnabled (isShortPreambleEnabled);
           m_stationManager->SetShortSlotTimeEnabled (capabilities.IsShortSlotTime ());
         }
-      if (goodBeacon && m_state == BEACON_MISSED)
+      if ((m_mihLinkDetected.IsNull () && goodBeacon && m_state == BEACON_MISSED) || sendAssoc)
         {
           SetState (WAIT_ASSOC_RESP);
           NS_LOG_DEBUG ("Good beacon received: send association request");
@@ -748,29 +782,6 @@ StaWifiMac::Receive (Ptr<Packet> packet, const WifiMacHeader *hdr)
                   return;
                 }
             }
-          if (!m_mihLinkDetected.IsNull ())
-            {
-              mih::LinkIdentifier linkId = mih::LinkIdentifier (mih::LinkType (mih::LinkType::WIRELESS_802_11),
-                                                                hdr->GetAddr1 (),
-                                                                hdr->GetAddr2 ());
-              mih::NetworkIdentifier networkId = mih::NetworkIdentifier ();
-              mih::NetworkAuxiliaryIdentifier networkAuxiliaryId = mih::NetworkAuxiliaryIdentifier ();
-              mih::SignalStrength signalStrength = mih::SignalStrength ();
-              SnrTag tag;
-              packet->PeekPacketTag (tag);
-              uint16_t snr = (uint16_t) tag.Get ();
-              mih::MihCapabilityFlag mihCapabilityFlag = mih::MihCapabilityFlag ();
-              mih::NetworkCapabilities networkCapabilities =  mih::NetworkCapabilities ();
-              mih::LinkDetectedInformation linkInfo = mih::LinkDetectedInformation (linkId, networkId,
-                                                                                    networkAuxiliaryId, signalStrength, snr, 
-                                                                                    rates, mihCapabilityFlag,
-                                                                                    networkCapabilities);
-              Ptr<mih::LinkDetectedInformation> linkInformation = Create<mih::LinkDetectedInformation> (linkInfo);
-              std::vector<Ptr<mih::LinkDetectedInformation>> linkInfoList;
-              linkInfoList.push_back (linkInformation);
-              m_mihLinkDetected (linkInfoList);
-            }
-        
           for (uint32_t i = 0; i < m_phy->GetNModes (); i++)
             {
               WifiMode mode = m_phy->GetMode (i);
@@ -829,9 +840,34 @@ StaWifiMac::Receive (Ptr<Packet> packet, const WifiMacHeader *hdr)
             {
               m_probeRequestEvent.Cancel ();
             }
+          if (!m_mihLinkDetected.IsNull ())
+            {
+              mih::LinkIdentifier linkId = mih::LinkIdentifier (mih::LinkType (mih::LinkType::WIRELESS_802_11),
+                                                                hdr->GetAddr1 (),
+                                                                hdr->GetAddr2 ());
+              mih::NetworkIdentifier networkId = mih::NetworkIdentifier ();
+              mih::NetworkAuxiliaryIdentifier networkAuxiliaryId = mih::NetworkAuxiliaryIdentifier ();
+              SignalStrengthTag signalStrengthTag;
+              packet->RemovePacketTag (signalStrengthTag);
+              uint16_t signal = (uint16_t) signalStrengthTag.Get ();
+              mih::SignalStrength signalStrength = mih::SignalStrength (signal);
+              SnrTag tag;
+              packet->PeekPacketTag (tag);
+              uint16_t snr = (uint16_t) tag.Get ();
+              mih::MihCapabilityFlag mihCapabilityFlag = mih::MihCapabilityFlag ();
+              mih::NetworkCapabilities networkCapabilities =  mih::NetworkCapabilities ();
+              StationCountTag stationCountTag;
+              packet->RemovePacketTag (stationCountTag);
+              uint32_t stationCount = stationCountTag.Get ();
+              mih::LinkDetectedInformation linkInfo = mih::LinkDetectedInformation (linkId, networkId,
+                                                                                    networkAuxiliaryId, signalStrength, snr, 
+                                                                                    rates, mihCapabilityFlag,
+                                                                                    networkCapabilities, stationCount);
+              m_mihLinkDetected (linkInfo);
+            }
           SetState (WAIT_ASSOC_RESP);
           SendAssociationRequest (false);
-        }
+	}
       return;
     }
   else if (hdr->IsAssocResp () || hdr->IsReassocResp ())

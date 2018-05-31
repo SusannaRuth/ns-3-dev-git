@@ -286,7 +286,7 @@ public:
   /**
    * \param mihLinkDetected the callback to invoke when a link is detected to generate the MIH event.
    */
-  void SetMihLinkDetectedCallback (Callback<void, mih::LinkDetectedInformationList> linkDetected);
+  void SetMihLinkDetectedCallback (Callback<bool, mih::LinkDetectedInformation> linkDetected);
 
   /* Next functions are not pure virtual so non Qos WifiMacs are not
    * forced to implement them.
@@ -314,7 +314,7 @@ protected:
   Callback<void> m_linkDown;     //!< Callback when a link is down
   Callback<void, mih::LinkIdentifier, Address, Address, bool, mih::MobilityManagementSupport> m_mihLinkUp;
   Callback<void, mih::LinkIdentifier, Address, mih::LinkDownReason> m_mihLinkDown;
-  Callback<void, mih::LinkDetectedInformationList> m_mihLinkDetected;
+  Callback<bool, mih::LinkDetectedInformation> m_mihLinkDetected;
 
   Ssid m_ssid; //!< Service Set ID (SSID)
 
